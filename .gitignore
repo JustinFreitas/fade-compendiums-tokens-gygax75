@@ -6,3 +6,6 @@ node_modules
 /.cursor
 /.vscode
 /scripts/generate-art-map.mjs
+
+fade-compendiums-tokens.lock
+

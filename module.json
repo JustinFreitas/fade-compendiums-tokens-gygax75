@@ -1,13 +1,13 @@
 {
   "id": "fade-compendiums-tokens",
   "title": "Fantastic Depths Compendiums Tokens",
-  "version": "#{VERSION}#",
+  "version": "1.0.5-gygax75.1",
   "compatibility": {
     "minimum": "14",
     "verified": "14",
     "maximum": "14"
   },
-  "description": "<p><strong>Fantastic Depths Compendiums Tokens</strong></p><p>Token artwork for Fantastic Depths monsters, applied automatically to fade-compendiums actors when this module is enabled.</p>",
+  "description": "<p><strong>Fantastic Depths Compendiums Tokens (OSE-Gygax75 Hybrid)</strong></p><p>Token artwork for Old-School Essentials (Classic &amp; Advanced Fantasy) and Fantastic Depths monsters, applied automatically through Foundry V14 Compendium Art settings and world token mappings.</p>",
   "authors": [
     {
       "name": "Jojop",
@@ -24,29 +24,31 @@
   "relationships": {
     "systems": [
       {
-        "id": "fantastic-depths",
+        "id": "ose",
         "type": "system",
         "compatibility": {}
-      }
-    ],
-    "requires": [
+      },
       {
-        "id": "fade-compendiums",
-        "type": "module",
+        "id": "fantastic-depths",
+        "type": "system",
         "compatibility": {}
       }
     ]
   },
   "flags": {
     "compendiumArtMappings": {
+      "ose": {
+        "mapping": "modules/fade-compendiums-tokens/map-ose.json",
+        "credit": "<em>Token artwork from Fantastic Depths Compendiums Tokens (Too Many Tokens - DnD &amp; Forelius).</em>"
+      },
       "fantastic-depths": {
         "mapping": "modules/fade-compendiums-tokens/map-fantastic-depths.json",
         "credit": "<em>Token artwork for Fantastic Depths Compendiums.</em>"
       }
     }
   },
-  "url": "#{URL}#",
-  "manifest": "#{MANIFEST}#",
-  "download": "#{DOWNLOAD}#",
-  "changelog": "#{CHANGELOG}#"
+  "url": "https://github.com/JustinFreitas/fade-compendiums-tokens-gygax75",
+  "manifest": "https://raw.githubusercontent.com/JustinFreitas/fade-compendiums-tokens-gygax75/main/module.json",
+  "download": "https://github.com/JustinFreitas/fade-compendiums-tokens-gygax75/releases/download/1.0.5-gygax75.1/module.zip",
+  "changelog": "https://github.com/JustinFreitas/fade-compendiums-tokens-gygax75/releases"
 }
